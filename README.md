@@ -1,17 +1,17 @@
 # 🧑‍💼 Django Employee Department Management
 
-## 📘 Overview
+##  Overview
 This is a simple Django application to manage **Employee** and **Department** details.  
 It demonstrates how to create models, perform database migrations, insert data, and manage relationships between tables.
 
-## ⚙️ Features
+## Features
 - Created **Employee** and **Department** models using Django ORM  
 - Established a **ForeignKey relationship** between Employee and Department  
 - Inserted sample data into both tables  
 - Displayed Employee and Department details using **Django Admin**  
 - Implemented **CRUD operations** (Create, Read, Update, Delete)  
 
-## 🧩 Models
+##  Models
 
 ### Department Model
 - **deptno** – Department Number (Primary Key)  
@@ -28,12 +28,12 @@ It demonstrates how to create models, perform database migrations, insert data, 
 - **comm** – Commission  
 - **deptno** – Foreign Key (linked to Department)  
 
-## 🛠️ Technologies Used
+##  Technologies Used
 - Python  
 - Django  
 - SQLite / PostgreSQL (depending on setup)  
 
-## 💡 What I Learned
+## What I Learned
 - How to create Django models and use different field types  
 - How to connect models using **ForeignKey** relationships  
 - How to apply changes to the database using migrations  
