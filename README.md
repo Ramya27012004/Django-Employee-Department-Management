@@ -29,7 +29,7 @@ It demonstrates how to create models, perform database migrations, insert data, 
 - **comm** – Commission  
 - **deptno** – Foreign Key (linked to Department)  
 
-##  How Data Display Works (Theory)
+##  How Data Display Works 
 1. **Purpose of Views**  
    Views in Django handle application logic, fetch data from the database, and send it to templates for display on web pages.
 
