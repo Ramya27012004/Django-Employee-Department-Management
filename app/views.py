@@ -35,3 +35,14 @@ def insert_emp(request):
         return HttpResponse('emp is created')
     else:
         return HttpResponse('emp is alredy exit')
+def display_dept(request):
+    QLDO=Dept.objects.all()
+    d={'QLDO':QLDO}
+    return render(request,'display_dept.html',d)
+def display_emp(request):
+    QLEO=Emp.objects.all()
+    QLEO=Emp.objects.filter(ename=('allen'))
+    QLEO=Emp.objects.filter(ename='smith')
+    QLEO=Emp.objects.filter(ename__startswith='s')
+    d={'QLEO':QLEO}
+    return render(request,'display_emp.html',d)
