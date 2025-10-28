@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Employee Table</h1>
+        <table border="3px">
+            <tr>
+                <th>Empno</th>
+                <th>Ename</th>
+                <th>Job</th>
+                <th>mgr</th>
+                <th>Hiredate</th>
+                <th>Sal</th>
+                <th>Comm</th>
+                <th>Deptno</th>
+                <th>mgr no</th>
+                <th> mgr Ename</th>
+                <th> mgr Job</th>
+                <th>mgr mgr</th>
+                <th> mgr Hiredate</th>
+                <th>mgr Sal</th>
+                <th>mgr Comm</th>
+                <th> mgr Deptno</th>
+
+            </tr>
+            {% for EO in QLEMO %}
+            <tr>
+                <td>{{EO.empno}}</td>
+                <td>{{EO.ename}}</td>
+                <td>{{EO.job}}</td>
+                <td>{{EO.mgr}}</td>
+                <td>{{EO.hiredate}}</td>
+                <th>{{EO.sal}}</th>
+                <th>{{EO.comm}}</th>
+                <th>{{EO.deptno}}</th>
+                <td>{{EO.mgr.empno}}</td>
+                <td>{{EO.mgr.ename}}</td>
+                <td>{{EO.mgr.job}}</td>
+                <td>{{EO.mgr.mgr}}</td>
+                <td>{{EO.mgr.hiredate}}</td>
+                <th>{{EO.mgr.sal}}</th>
+                <th>{{EO.mgr.comm}}</th>
+                <th>{{EO.mgr.deptno}}</th>
+                
+            </tr>
+            {% endfor %}
+
+        </table>
+    </center>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>EmployeeToMgrToDeptno Table</h1>
+        <table border="3px">
+            <tr>
+                <th>Empno</th>
+                <th>Ename</th>
+                <th>Job</th>
+                <th>mgr</th>
+                <th>Hiredate</th>
+                <th>Sal</th>
+                <th>Comm</th>
+                <th>Deptno</th>
+                <th>mgr_no</th>
+                <th> mgr Ename</th>
+                <th> mgr Job</th>
+                <th>mgr mgr</th>
+                <th> mgr Hiredate</th>
+                <th>mgr Sal</th>
+                <th>mgr Comm</th>
+                <th> mgr Deptno</th>
+                <th>Dname</th>
+                <th>loc</th>
+                <th>deptno</th>
+
+            </tr>
+            {% for EMDO in QLEMDO %}
+            <tr>
+                <td>{{EMDO.empno}}</td>
+                <td>{{EMDO.ename}}</td>
+                <td>{{EMDO.job}}</td>
+                <td>{{EMDO.mgr}}</td>
+                <td>{{EMDO.hiredate}}</td>
+                <th>{{EMDO.sal}}</th>
+                <th>{{EMDO.comm}}</th>
+                <th>{{EMDO.deptno}}</th>
+                <td>{{EMDO.mgr.empno}}</td>
+                <td>{{EMDO.mgr.ename}}</td>
+                <td>{{EMDO.mgr.job}}</td>
+                <td>{{EMDO.mgr.mgr}}</td>
+                <td>{{EMDO.mgr.hiredate}}</td>
+                <th>{{EMDO.mgr.sal}}</th>
+                <th>{{EMDO.mgr.comm}}</th>
+                <th>{{EMDO.mgr.deptno}}</th>
+                <td>{{EMDO.deptno.dname}}</td>
+                <td>{{EMDO.deptno.loc}}</td>
+                <td>{{EMDO.deptno.deptno}}</td>
+                
+            </tr>
+            {% endfor %}
+
+        </table>
+    </center>
+</body>
+</html>
